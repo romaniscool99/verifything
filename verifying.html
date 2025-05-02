@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verifying...</title>
+  <meta http-equiv="refresh" content="4;url=https://verifytest.vercel.app">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .loading-text {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .dots::after {
+      content: '';
+      animation: dots 1s steps(4, end) infinite;
+    }
+
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+      100% { content: ''; }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://assets.onecompiler.app/43fw98db5/43ggte77w/solos.gif" alt="Loading GIF">
+  <div class="loading-text">Loading<span class="dots"></span></div>
+</body>
+</html>
